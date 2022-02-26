@@ -7,6 +7,19 @@ public class Product {
 	private Double price;
 	private String description;
 	private String imageUri;
+	
+	public Product() {
+	}
+	
+	public Product(Long id, String name, Double price, String description, String imageUri) {
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.description = description;
+		this.imageUri = imageUri;
+	}
+
+
 	public Long getId() {
 		return id;
 	}
@@ -42,7 +55,4 @@ public class Product {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", description=" + description
 				+ ", imageUri=" + imageUri + "]";
 	}
-	
-	
-
 }
