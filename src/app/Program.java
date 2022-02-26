@@ -20,6 +20,5 @@ public class Program {
 		while (rs.next()) {
 			System.out.println(rs.getLong("Id") + ", " + rs.getString("Name"));
 		}
-	}
-	
+	}	
 }
